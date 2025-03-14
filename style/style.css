@@ -1,13 +1,132 @@
 @charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
 *{
+    
     margin: 0px;
     padding: 0px;
+    
 }
-body{
-    background-color: rgb(190, 62, 190);
+:root{
+    --cor1: #5E24D3;
+    --cor2: #9824D4;
+    --cor3: #00ff4c;
+    --cor4: #a578ff;
+    --cor5: #210D4B;
+    --cor6: #19093b;
+    --cor7: #330877;
+    --cor8: #5500ff;
+
+}
+header{
+  
+    background-color: var(--cor6);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: 1.5rem;
+}
+nav > a{
+    font-size: 1.2rem;
+    padding: 2rem;
     color: white;
+    text-decoration: none;
+    &:hover{
+        transition: 0.4s;
+        color: var(--cor4);
+    }
 }
 
+
+body{
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.705);
+    background-color: var(--cor5);
+    color: white;
+    height: 100vh;
+    
+    font-family: Oswald, Arial, Helvetica, sans-serif;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    
+}
+section{
+    padding: 0rem 1rem;
+}
+section#inicio{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2rem;
+    flex-wrap: wrap;
+    align-items: center;
+    min-height: 650px;
+}
+
+div#textoinicio{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    min-height: 300px;
+
+
+}
+div#imageminicio{
+    max-width: 450px;
+    padding: 1rem;
+}
+div#imageminicio img{
+    border-radius: 50%;
+ width: 100%;
+}
+h1{
+    font-size: 4rem;
+}
+div#textoinicio p{
+    font-size: 1.2rem;
+}
+strong{
+    color: var(--cor3);
+}
+
+section#sobremim{
+    display: flex;
+    padding: 3rem;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap
+
+    
+    padding: ;
+    background-color: var(--cor7);
+}
+.sobremim > div{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.sobremim div > h2{
+    padding: 20px;
+    border-radius: 10%;
+ background-color: var(--cor8);
+}
+.sobremim div > p{
+    max-width: 600px;
+}
+.sobremim div#imgsobremim{
+    max-width: 300px;
+    padding: 1rem;
+}
 div#imgsobremim img{
-    width: 500px;
+    border-radius: 20%;
+    width: 100%;
 }
