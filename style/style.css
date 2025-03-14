@@ -3,3 +3,11 @@
     margin: 0px;
     padding: 0px;
 }
+body{
+    background-color: rgb(190, 62, 190);
+    color: white;
+}
+
+div#imgsobremim img{
+    width: 500px;
+}
