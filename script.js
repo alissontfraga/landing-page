@@ -6,7 +6,7 @@ function copiarEmail() {
         document.getElementById("mensagem").innerText = "E-mail copiado!";
         setTimeout(() => {
             document.getElementById("mensagem").innerText = "";
-        }, 2000);
+        }, 4000);
     }).catch(erro => {
         console.error("Erro ao copiar o e-mail:", erro);
     });
