@@ -5,55 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alisson Teles Fraga</title>
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/mediaqueries.css">
+    
 </head>
 <body>
     <header>
         <nav>
             <a href="#sobremim">Sobre mim</a>
-            <a href="#conhecimentos">Conhecimentos</a>
+            <a href="#conhecimentos">Conhecimentos<d/a>
             <a href="#projetos">Projetos</a>
             <a href="#contato">Contato</a>
-            <a href="#">mudar tema</a>
-            <a href="#">mudar idioma</a>
         </nav>
     </header>
+
     <main>
-        <section id="inicio"> 
-            <div id="textoinicio">
-                <h1>Olá, eu sou o <br><strong>Alisson Teles Fraga</strong></h1>
-                <p>Tenho 19 anos e sou um entusiasta da tecnologia e da programação.</p>
+
+        <section class="first-section">
+            <div>
+                <h1>Olá, eu sou o <br> <strong>Alisson Teles Fraga</strong></h1>
+                <p>Tenho 19 anos, estou cursando Engenharia de Software e sou um entusiasta da tecnologia e da programação.</p>
             </div>
 
-                <div id="imageminicio"><img src="images/Screenshot_20250308-181955~2.png" alt="Foto de Alisson Teles Fraga"></div>
+            <div class="box-img-main">
+                <img class="img-profile" src="images/Screenshot_20250308-181955~2.png" alt="Foto de Alisson Teles Fraga">
+            </div>
+
         </section>
 
-        <section id="sobremim" class="sobremim">
-            <div id="txtsobremim">
-                <h2>Sobre mim</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis quia incidunt odio, qui cupiditate at perferendis id voluptatum deleniti quidem vero facilis? Sed praesentium eum facere id neque deserunt necessitatibus?</p>
+        <section id="sobremim" class="second-section">
+            <h2 class="title">Sobre mim</h2>
+            <div class="body-second-section">
+                <p>Me chamo Alisson Teles Fraga, tenho 19 anos, estou cursando Engenharia de software e estudando os conceitos de programação, como JavaScript, HTML e CSS, e criando projetos para consolidar o conhecimento. Estou em busca de uma oportunidade na área de tecnologia.</p>
+                           <div class="box-img-sobremim">
+                <img class="img-sobremim" src="images/COLOR_POP5.jpg" alt="Foto de Alisson Teles Fraga">
+                           </div>
             </div>
-            <div id="imgsobremim">
-                <img src="images/COLOR_POP5.jpg" alt="Foto de Alisson Teles Fraga">
-            </div>
+
         </section>
 
-        <section id="conhecimentos">
-            <h2>Conhecimentos</h2>
+        <section id="conhecimentos" class="third-section">
+            <h2 class="title">Conhecimentos</h2>
             <ul>
-                <li>Javascript</li>
+                <li>JavaScript</li>
                 <li>CSS</li>
                 <li>HTML</li>
                 <li>Git</li>
                 <li>Github</li>
-                
             </ul>
+
         </section>
 
-        <section id="projetos">
-            <h2>Meus Projetos</h2>
-            <p>Carregando...</p>
-            <div id="listadeprojetos"></div>
-            
+        <section id="projetos" class="fourth-section">
+
         </section>
 
     </main>
@@ -82,6 +85,11 @@
             <p id="mensagem"></p>
         </div>
     </footer>
+
+
+
 </body>
+
 <script src="script.js"></script>
+
 </html>

@@ -8,125 +8,168 @@
     padding: 0px;
     
 }
-:root{
-    --cor1: #5E24D3;
-    --cor2: #9824D4;
-    --cor3: #00ff4c;
-    --cor4: #a578ff;
-    --cor5: #210D4B;
-    --cor6: #19093b;
-    --cor7: #330877;
-    --cor8: #5500ff;
 
+:root{
+    --cor1: #a578ff;
+    --cor2:#5E24D3;
+    --cor3: #330877;
+    --cor4: #210D4B;
+    --cor5: #19093b;
+    --cor6:#00ff4c;
+    --cor7:#56f39d;
+    --cor8:#6210c0;
 }
+
+/*  :root{
+    --cor1: #C5D8EA;
+    --cor2:#4281B6;
+    --cor3:#203A4F;
+    --cor4:#11202C;
+}
+     */
+
 header{
-  
-    background-color: var(--cor6);
+    background: linear-gradient(#19093b, #410392);
+
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    gap: 1rem;
+    background-color: var(--cor3);
+    padding: 0.2rem;
     flex-wrap: wrap;
-    padding: 1.5rem;
+
+   
 }
+nav{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+}
+
+
 nav > a{
-    font-size: 1.2rem;
-    padding: 2rem;
-    color: white;
+    
+    color: rgb(255, 255, 255);
     text-decoration: none;
+    padding: 1rem 1rem;
+    font-size: 1.3rem;
+    
     &:hover{
         transition: 0.4s;
-        color: var(--cor4);
+        color: var(--cor6);
+        background-color: var(--cor2);
+        border-radius: 15px;
+
     }
 }
-
-
 body{
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.705);
-    background-color: var(--cor5);
     color: white;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.541);
     height: 100vh;
-    
     font-family: Oswald, Arial, Helvetica, sans-serif;
-}
-main{
-    display: flex;
-    flex-direction: column;
-    
-}
-section{
-    padding: 0rem 1rem;
-}
-section#inicio{
-    display: flex;
-    justify-content: space-evenly;
-    gap: 2rem;
-    flex-wrap: wrap;
-    align-items: center;
-    min-height: 650px;
+    background-color: var(--cor8);
 }
 
-div#textoinicio{
+.first-section{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 600px;
+
+}
+
+.first-section > div{
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    flex-wrap: wrap;
-    align-items: center;
+    gap: 1rem;
     min-height: 300px;
 
-
 }
-div#imageminicio{
+
+.first-section > div > p{
+    max-width: 400px;
+    font-size: 1.3rem;
+}
+
+.box-img-main{
     max-width: 450px;
-    padding: 1rem;
-}
-div#imageminicio img{
     border-radius: 50%;
- width: 100%;
-}
-h1{
-    font-size: 4rem;
-}
-div#textoinicio p{
-    font-size: 1.2rem;
-}
-strong{
-    color: var(--cor3);
 }
 
-section#sobremim{
-    display: flex;
-    padding: 3rem;
-    justify-content: center;
-    gap: 2rem;
-    flex-wrap: wrap
-
-    
-    padding: ;
-    background-color: var(--cor7);
+.img-profile{
+    border-radius: 50%;
 }
-.sobremim > div{
-    
+
+
+.second-section{
     display: flex;
     flex-direction: column;
-    gap: 4rem;
-    justify-content: center;
+    justify-content: space-evenly;
+    background-color: var(--cor3);
+    gap: 20px;
     align-items: center;
     flex-wrap: wrap;
+    min-height: 450px;
+  
+    
 }
-.sobremim div > h2{
-    padding: 20px;
-    border-radius: 10%;
- background-color: var(--cor8);
+.second-section > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    min-height: 300px;
 }
-.sobremim div > p{
-    max-width: 600px;
+.second-section > div > p {
+    max-width: 400px;
+    font-size: 1.5rem;
 }
-.sobremim div#imgsobremim{
-    max-width: 300px;
-    padding: 1rem;
+.body-second-section{
+    display: flex;
+   
 }
-div#imgsobremim img{
-    border-radius: 20%;
-    width: 100%;
+
+.img-sobremim{
+    max-width: 250px;
+    border-radius: 15%;
+}
+
+
+.title{
+    border-bottom: 1px solid var(--cor6);
+    padding: 4px;
+    font-size: 2rem;
+    color: var(--cor6);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+h1{
+    font-size: 4rem;
+    line-height: 1.2;
+
+}
+
+strong{
+    color: var(--cor6);
+}
+html{
+    scroll-behavior: smooth;
 }
