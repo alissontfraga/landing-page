@@ -3,79 +3,71 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
 *{
-    
+    box-sizing: border-box;
     margin: 0px;
     padding: 0px;
-    
 }
-
-:root{
-    --cor1: #a578ff;
-    --cor2:#5E24D3;
-    --cor3: #330877;
-    --cor4: #210D4B;
-    --cor5: #19093b;
-    --cor6:#00ff4c;
-    --cor7:#56f39d;
-    --cor8:#6210c0;
-}
-
-/*  :root{
-    --cor1: #C5D8EA;
-    --cor2:#4281B6;
-    --cor3:#203A4F;
-    --cor4:#11202C;
-}
-     */
-
+ 
 header{
-    background: linear-gradient(#19093b, #410392);
-
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--cor3);
-    padding: 0.2rem;
-    flex-wrap: wrap;
-
-   
+    padding: 15px 10px;
 }
-nav{
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    gap: 2.5rem;
+.box-title-header p{
+    font-size: 1.2rem;
+    color: #f1294a;
+    text-shadow: 1px 2px 8px #f1294a;
+
 }
 
-
-nav > a{
-    
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    padding: 1rem 1rem;
-    font-size: 1.3rem;
+.nav-links{
+    list-style: none;
+}
+.nav-links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+.nav-links li a{
+    font-size: 1.2em;
+    color: white;
+    transition: all 0.3s ease 0s;
+    border-bottom: 1px solid #f1294a;
+    padding-bottom: 5px;
     
     &:hover{
-        transition: 0.4s;
-        color: var(--cor6);
-        background-color: var(--cor2);
-        border-radius: 15px;
-
+        color: #f1294a; 
+        text-shadow: 1px 2px 8px #f1294a;
     }
 }
-body{
+header button{
     color: white;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.541);
-    height: 100vh;
     font-family: Oswald, Arial, Helvetica, sans-serif;
-    background-color: var(--cor8);
+    font-size: 1.1em;
+    padding: 9px 25px;
+    background-color: #f1294a;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    &:hover{
+        background-color: #a0172e;
+    }
+}
+li, a, button{
+    text-decoration: none;
+}
+
+body{
+    background: linear-gradient(#161616, #525252);
+    font-family: Oswald, Arial, Helvetica, sans-serif;
+    color: white;
 }
 
 .first-section{
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-evenly;
-    gap: 20px;
     align-items: center;
     flex-wrap: wrap;
     min-height: 600px;
@@ -85,70 +77,73 @@ body{
 .first-section > div{
     display: flex;
     flex-direction: column;
-    gap: 1rem;
     min-height: 300px;
+    min-width: 300px;
 
+
+}
+.txt-first-section{
+    padding: 30px;
+    border: 3px solid #f1294a;
+    border-radius: 20px;
+    box-shadow: 7px 8px 8px #f1294a;
 }
 
 .first-section > div > p{
-    max-width: 400px;
-    font-size: 1.3rem;
+    padding-top: 30px;
+    color: #dfdfdf;
+    max-width: 420px;
+    font-size: 1.2rem;
 }
 
 .box-img-main{
-    max-width: 450px;
+    border-radius: 20px;
+    box-shadow: 7px 3px 15px #f1294a;
+    max-width: 400px;
     border-radius: 50%;
 }
 
 .img-profile{
     border-radius: 50%;
 }
-
+.icons-first-section{
+    padding-top: 18px;
+}
 
 .second-section{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    background-color: var(--cor3);
     gap: 20px;
     align-items: center;
     flex-wrap: wrap;
     min-height: 450px;
-  
-    
 }
-.second-section > div{
+
+
+.txt-second-section{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5rem;
-    min-height: 300px;
+    padding: 30px;
+    border: 3px solid #f1294a;
+    border-radius: 20px;
+    box-shadow: 7px 8px 8px #f1294a;
+    max-width: 480px;
 }
-.second-section > div > p {
-    max-width: 400px;
-    font-size: 1.5rem;
+.txt-second-section > p{
+    font-size: 1.2rem;
 }
 .body-second-section{
     display: flex;
-   
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 4rem;
 }
 
 .img-sobremim{
     max-width: 250px;
     border-radius: 15%;
 }
-
-
-.title{
-    border-bottom: 1px solid var(--cor6);
-    padding: 4px;
-    font-size: 2rem;
-    color: var(--cor6);
-}
-
-
-
-
 
 
 
@@ -168,8 +163,15 @@ h1{
 }
 
 strong{
-    color: var(--cor6);
+    color: #f1294a;
 }
 html{
     scroll-behavior: smooth;
+    
+}
+.title{
+    font-size: 2rem;
+    color: #ffffff;
+    border-bottom: 2px solid #f1294a;
+    padding-bottom: 5px;
 }
