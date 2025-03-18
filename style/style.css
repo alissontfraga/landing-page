@@ -29,6 +29,7 @@ header{
     padding: 0px 20px;
 }
 .nav-links li a{
+    display: inline-block;
     font-size: 1.2em;
     color: white;
     transition: all 0.3s ease 0s;
@@ -36,10 +37,20 @@ header{
     padding-bottom: 5px;
     
     &:hover{
+        
         color: #f1294a; 
         text-shadow: 1px 2px 8px #f1294a;
+             color: #f1294a; 
+             cursor: pointer;
+             transform: scale(1.1);
+         
+     }
     }
-}
+ .box-btn-header{
+        display: flex;
+        gap: 1rem;
+    }
+
 header button{
     color: white;
     font-family: Oswald, Arial, Helvetica, sans-serif;
@@ -52,16 +63,24 @@ header button{
     transition: all 0.3s ease 0s;
     &:hover{
         background-color: #a0172e;
+             color: #ffffff; 
+             cursor: pointer;
+             transform: scale(1.2);
+         }
     }
-}
+
+
+
 li, a, button{
     text-decoration: none;
 }
 
 body{
+    
     background: linear-gradient(#161616, #525252);
     font-family: Oswald, Arial, Helvetica, sans-serif;
     color: white;
+    text-shadow: 1px 2px 5px #0000008f;
 }
 
 .first-section{
@@ -86,7 +105,8 @@ body{
     padding: 30px;
     border: 3px solid #f1294a;
     border-radius: 20px;
-    box-shadow: 7px 8px 8px #f1294a;
+    box-shadow: 7px 5px 10px #f1294a;
+    
 }
 
 .first-section > div > p{
@@ -108,16 +128,28 @@ body{
 }
 .icons-first-section{
     padding-top: 18px;
+    
+}
+.first-section a{
+    display: inline-block;
+    transition: 0.5s;
+    &:hover{
+       border-radius: 15px;
+        color: #f1294a; 
+        cursor: pointer;
+        transform: scale(1.4);
+    }
 }
 
-.second-section{
+.second-section, .fourth-section{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    gap: 20px;
+    gap: 2rem;
     align-items: center;
     flex-wrap: wrap;
     min-height: 450px;
+    padding-bottom: 14rem;
 }
 
 
@@ -126,8 +158,9 @@ body{
     padding: 30px;
     border: 3px solid #f1294a;
     border-radius: 20px;
-    box-shadow: 7px 8px 8px #f1294a;
+    box-shadow: 7px 1px 8px #f1294a;
     max-width: 480px;
+    background-color: #727272;
 }
 .txt-second-section > p{
     font-size: 1.2rem;
@@ -143,18 +176,145 @@ body{
 .img-sobremim{
     max-width: 250px;
     border-radius: 15%;
+    box-shadow: 2px 2px 8px #adadad;
+    border: 3px solid #adadad;
+
+}
+
+.third-section{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding-bottom: 14rem;
+}
+
+.third-section ul{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.third-section ul li{
+    font-size: 1.4rem;
+}
+
+.box-ul-third-section{
+    padding: 3rem;
+    box-shadow: 2px 2px 8px #f1294a;
+    border: 5px solid #adadad;
+    border-radius: 15px;
+    background-color: #727272;
 }
 
 
 
 
+#my-projects-list{
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    box-shadow: 2px 2px 8px #f1294a;
+    border: 5px solid #adadad;
+    border-radius: 15px;
+    max-width: 70rem;
+    background-color: #727272;
+    
+}
 
 
+#my-projects-list a{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+        &:hover{
+            transition: 0.5s;
+            transform: scale(1.2);
+            color: #f1294a;
+            text-shadow: 1px 2px 8px #f1294a;
+            cursor: pointer;
+        }
+}
 
+footer{
+    padding: 0rem 4rem 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+}
+.box-all-footer{
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
 
+ .box-icons-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    box-shadow: 2px 2px 8px #f1294a;
+    border: 5px solid #adadad;
+    border-radius: 15px;
+    padding: 1rem;
+    max-width: 70rem;
+    background-color: #727272;
+ }
 
+ .box-icons-footer > a{
+    transition: 0.5s;
+    &:hover{
+       border-radius: 15px;
+        color: #f1294a; 
+        cursor: pointer;
+        transform: scale(1.4);
+    }
+   
+}
 
+#copiar-email{
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    gap: 1rem;
+    box-shadow: 2px 2px 8px #f1294a;
+    border: 5px solid #adadad;
+    border-radius: 15px;
+    max-width: 70rem;
+    background-color: #727272;
+}
 
+footer button{
+    color: white;
+    font-family: Oswald, Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+    padding: 1rem;
+    background-color:#f1294a;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    &:hover{
+        background-color: #c71f3b;
+        cursor: pointer;
+        transform: scale(1.2);
+    
+    }
+}
 
 h1{
     font-size: 4rem;
