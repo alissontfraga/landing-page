@@ -47,3 +47,32 @@ function showProjects(data){
 }
 
 getProjects()
+
+
+function menuShow() {
+    let menuMobile = document.querySelector('.mobile-menu');
+    let menuIcon = document.getElementById('menu-icon');
+    let closeIcon = document.getElementById('x-icon');
+    menuMobile.classList.toggle('open');
+
+    // Alterna a visibilidade dos ícones
+    if (menuMobile.classList.contains('open')) {
+        menuIcon.style.display = "none";
+        closeIcon.style.display = "block";
+    } else {
+        menuIcon.style.display = "block";
+        closeIcon.style.display = "none";
+    }
+}
+
+
+/*  function menuShow() {
+    let menuMobile = document.querySelector('.mobile-menu');
+    if (menuMobile.classList.contains('open')) {
+        menuMobile.classList.remove('open');
+        document.querySelector('.icon'). src = ""
+    } else {
+        menuMobile.classList.add('open');
+    }
+}
+ */
