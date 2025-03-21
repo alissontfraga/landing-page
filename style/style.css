@@ -116,9 +116,10 @@ body{
 .first-section{
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    gap: 4rem;
     min-height: 600px;
 
 }
@@ -229,6 +230,7 @@ body{
 }
 
 .box-ul-third-section{
+    width: 40rem;
     padding: 3rem;
     box-shadow: 2px 2px 8px #f1294a;
     border: 5px solid #adadad;
@@ -281,8 +283,9 @@ footer{
 .box-all-footer{
     display: flex;
     flex-direction: row;
+    width: 100%;
     gap: 3rem;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     
 }
@@ -297,7 +300,8 @@ footer{
     border: 5px solid #adadad;
     border-radius: 15px;
     padding: 1rem;
-    max-width: 70rem;
+    width: 20rem;
+    height: 7rem;
     background-color: #727272;
  }
 
@@ -315,12 +319,15 @@ footer{
 #copiar-email{
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
     padding: 1rem;
     gap: 1rem;
     box-shadow: 2px 2px 8px #f1294a;
     border: 5px solid #adadad;
     border-radius: 15px;
-    max-width: 70rem;
+    width: 20rem;
+    height: 7rem;
     background-color: #727272;
 }
 
@@ -329,6 +336,7 @@ footer button{
     font-family: Oswald, Arial, Helvetica, sans-serif;
     font-size: 1.1em;
     padding: 1rem;
+    width: 10rem;
     background-color:#f1294a;
     border: none;
     border-radius: 50px;
@@ -337,7 +345,7 @@ footer button{
     &:hover{
         background-color: #c71f3b;
         cursor: pointer;
-        transform: scale(1.2);
+        transform: scale(1.1);
     
     }
 }
