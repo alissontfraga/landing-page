@@ -223,7 +223,7 @@ body{
 }
 
 .box-ul-third-section{
-    width: 40rem;
+    width: 60%;
     padding: 3rem;
     box-shadow: 2px 2px 8px #f1294a;
     border: 5px solid #adadad;
@@ -242,7 +242,7 @@ body{
     box-shadow: 2px 2px 8px #f1294a;
     border: 5px solid #adadad;
     border-radius: 15px;
-    max-width: 70rem;
+    width: 60%;
     background-color: #727272;
     
 }
