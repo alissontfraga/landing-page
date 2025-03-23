@@ -18,7 +18,6 @@ header{
     font-size: 1.2rem;
     color: #f1294a;
     text-shadow: 1px 2px 8px #f1294a;
-
 }
 
 .nav-links{
@@ -35,7 +34,6 @@ header{
     transition: all 0.3s ease 0s;
     border-bottom: 1px solid #f1294a;
     padding-bottom: 5px;
-    
     &:hover{
         
         color: #f1294a; 
@@ -57,7 +55,6 @@ header{
     transition: all 0.3s ease 0s;
     border-bottom: 1px solid #f1294a;
     padding-bottom: 5px;
-    
     &:hover{
         
         color: #f1294a; 
@@ -65,7 +62,6 @@ header{
              color: #f1294a; 
              cursor: pointer;
              transform: scale(1.1);
-         
      }
 
 }
@@ -133,7 +129,6 @@ body{
     border: 3px solid #f1294a;
     border-radius: 20px;
     box-shadow: 7px 5px 10px #f1294a;
-    
 }
 
 .first-section > div > p{
@@ -155,7 +150,6 @@ body{
 }
 .icons-first-section{
     padding-top: 18px;
-    
 }
 .first-section a{
     display: inline-block;
@@ -178,7 +172,6 @@ body{
     min-height: 450px;
     padding-bottom: 10rem;
 }
-
 
 .txt-second-section{
     display: flex;
@@ -237,9 +230,6 @@ body{
     border-radius: 15px;
     background-color: #727272;
 }
-
-
-
 
 #my-projects-list{
     display: flex;
@@ -346,14 +336,12 @@ footer button{
         background-color: #c71f3b;
         cursor: pointer;
         transform: scale(1.1);
-    
     }
 }
 
 h1{
     font-size: 4rem;
     line-height: 1.2;
-
 }
 
 strong{
