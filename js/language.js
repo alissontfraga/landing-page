@@ -30,7 +30,7 @@ const textos = {
         h1FirstSection: "Hello, i'm <br> <strong>Alisson Teles Fraga</strong>.",
         pFirstSection: "Technology and programming enthusiast, I work as a Front-End Developer.",
         h2SecondSection: "About me",
-        pSecondSection: "My name is Alisson Teles Fraga, I am 19 years old, i am studying Software Engineering and programming concepts, such as JavaScript, HTML and CSS, and creating projects to consolidate my knowledge.<br>I am looking for an opportunity in the technology area.",
+        pSecondSection: "My name is Alisson Teles Fraga, I am 19 years old, i am studying Software Engineering and programming concepts, such as JavaScript, Java, CSS and HTML, and creating projects to consolidate my knowledge.<br>I am looking for an opportunity in the technology area.",
         h2ThirdSection: "Skills",
         liInglesThirdSection: "English",
         h2FourthSection: "My Projects",
@@ -70,14 +70,9 @@ function alternarIdioma() {
     document.getElementById("mensagem").innerText = textos[idiomaAtual].pFooter;
     document.getElementById("mensagem").innerText = '';
     
-
-    
-    
     document.getElementById("btn-language").innerText = textos[idiomaAtual].botaoIdioma;
     document.getElementById("a-language").innerText = textos[idiomaAtual].botaoIdioma;
     
-    
-    //o método getElementsByClassName() retorna uma coleção de elementos (um array-like), Para corrigir isso, você precisa acessar o primeiro elemento da coleção, que pode ser feito com o índice [0]
-    
+
 
 }
